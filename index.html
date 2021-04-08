@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flickr App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="overlay hide">
+    </section>
+    <nav>
+        <aside class="input-field">
+            <aside class="navicon" id="navicon">
+                <ion-icon name="more" class="icon" id="burger"></ion-icon>
+                <ion-icon name="close" class="icon" id="cross"></ion-icon>
+            </aside>
+            <img src="img/flickr_logo.png" alt="flickr_logo" id="flickr-logo">
+            <input type="search" placeholder="Search">
+            <button type="button" class="button-search">
+                <ion-icon name="search"></ion-icon>
+            </button>
+            <div class="dropdown">
+                <button type="button" class="">
+                    <ion-icon name="funnel"></ion-icon>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" id="relevance">Relevance</a>
+                    <a href="#" id="dpAsc">Date Posted Ascending</a>
+                    <a href="#" id="dpDesc">Date Posted Descending</a>
+                </div>
+            </div>
+        </aside>
+        <aside class="mobile-sort option-menu">
+            <label for="mobile-sort-select" class="mobile-sort option-menu">Sort</label>
+            <select name="mobile-sort-select" class="select-text" id="mobile-sort">
+                <option value="0">Relevance</option>
+                <option value="1">Date Posted Ascending</option>
+                <option value="2">Date Posted Descending</option>
+            </select>
+        </aside>
+        <aside class="cc option-menu">
+            <label for="creative-commons" class="option-menu">Creative Commons</label>
+            <select name="creative-commons" id="attribution" class="select-text">
+                <option value="0">No rights reserved</option>
+                <option value="7">All rights reserved</option>
+                <option value="4">Attribution</option>
+                <option value="5">Attribution - Share alike</option>
+                <option value="6">Attribution - No derivatives</option>
+                <option value="2">Attribution - NC</option>
+                <option value="1">Attribution - NC - Share alike</option>
+                <option value="3">Attribution - NC - No derivatives</option>
+                <option value="9">Public Domain</option>
+            </select>
+        </aside>
+        <aside class="option-menu">
+            <label for="size" class="option-menu">Size</label>
+            <select name="size" id="image-size" class="select-text">
+                <option value="0">Small</option>
+                <option value="1">Medium</option>
+                <option value="2">Large</option>
+            </select>
+        </aside>
+        <button id="random-search" class="option-menu">Random search</button>
+    </nav>
+    <main>
+        <section class="gallery">
+        </section>
+    </main>
+    <footer>
+        <a href="#" class="previous">
+            <ion-icon name="arrow-round-back"></ion-icon>
+        </a>
+        <a href="#" class="next">
+            <ion-icon name="arrow-round-forward"></ion-icon>
+        </a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

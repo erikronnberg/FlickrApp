@@ -1,0 +1,76 @@
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        position: fixed;
+        bottom: 0rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        z-index: 2;
+    }
+
+    nav aside.input-field {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav aside.cc {
+        margin-left: 0;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    .option-menu {
+        display: none;
+    }
+
+    .option-menu.show {
+        margin-top: 0.8rem;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    #burger {
+        display: flex;
+    }
+
+    aside.navicon {
+        visibility: visible;
+    }
+
+    .dropdown {
+        display: none;
+        margin: 0;
+    }
+
+    footer {
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 1rem 1rem 0 1rem;
+        z-index: 0;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+
+    footer a {
+        background-color: inherit;
+    }
+
+    button {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        max-width: 800px;
+        margin: 0 1rem 0 1rem;
+    }
+
+    main {
+        grid-template-areas: "gallery gallery";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
